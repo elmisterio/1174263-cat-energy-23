@@ -1,0 +1,19 @@
+.main-section__wrapper-top {
+  height: 302px;
+  background: url(../img/cat-green.jpg) center no-repeat;
+  @include bg-color($green);
+}
+
+.main-section .main-title {
+  color: $white;
+  padding-top: 27px;
+}
+
+.main-section .main-subtitle {
+  color: $white;
+}
+
+.main-section__wrapper-bottom {
+  padding-bottom: 22px;
+}
+

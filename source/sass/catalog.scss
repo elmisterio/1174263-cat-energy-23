@@ -1,0 +1,29 @@
+.catalog__title {
+  padding-top: 27px;
+  padding-bottom: 33px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid $dark-gray;
+}
+
+.catalog__products-list {
+  @include mp-zero;
+  list-style: none;
+}
+
+.catalog__product-item {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid $dark-gray;
+}
+
+.catalog__product-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.catalog__show-more {
+  padding-bottom: 20px;
+  border-bottom: 1px solid $dark-gray;
+}

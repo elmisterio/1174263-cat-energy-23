@@ -1,0 +1,33 @@
+.extra-products__title {
+  padding-bottom: 20px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  border-bottom: 1px solid $dark-gray;
+}
+
+.extra-products__list {
+  @include mp-zero;
+  list-style: none;
+}
+
+.extra-products__item {
+  padding-bottom: 20px;
+  border-bottom: 1px solid $dark-gray;
+}
+
+.extra-products__product-title {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $black-gray;
+  text-transform: uppercase;
+}
+
+.extra-products__weight,
+.extra-products__cost {
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: $black-gray;
+}

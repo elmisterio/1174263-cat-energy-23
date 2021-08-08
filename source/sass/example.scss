@@ -1,0 +1,14 @@
+.example {
+  @include bg-color($gray);
+  padding-top: 27px;
+  padding-bottom: 25px;
+
+}
+
+.example__desc {
+  @include mp-zero;
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: $black-gray;
+}

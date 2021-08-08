@@ -1,0 +1,87 @@
+//Fonts
+
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+      local("Oswald"),
+      url("../fonts/oswaldregular.woff2") format("woff2"),
+      url("../fonts/oswaldregular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src:
+      local("Oswald"),
+      url("../fonts/oswaldmedium.woff2") format("woff2"),
+      url("../fonts/oswaldmedium.woff") format("woff");
+}
+
+
+
+//Colors
+
+$white: rgba(255, 255, 255, 1);
+$white-60: rgba(255, 255, 255, 0.6);
+$white-30: rgba(255, 255, 255, 0.3);
+$black: rgba(0, 0, 0, 1);
+$black-60: rgba(0, 0, 0, 0.6);
+$black-30: rgba(0, 0, 0, 0.3);
+$green: rgba(104, 183, 56, 1);
+$dark-green: rgba(94, 170, 47, 1);
+$gray: rgba(242, 242, 242, 1);
+$dark-gray: rgba(235, 235, 235, 1);
+$input-gray: rgba(205, 205, 205, 1);
+$input-dark-gray: rgba(186, 186, 186, 1);
+$input-dark-gray-30: rgba(186, 186, 186, 0.3);
+$black-gray: rgba(68, 68, 68, 1);
+
+
+
+//Other
+
+.page {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  color: $black;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  min-width: 280px;
+  max-width: 1220px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.off {
+  display: none;
+}

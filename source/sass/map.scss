@@ -1,0 +1,22 @@
+.map__title {
+  @include mp-zero;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.map__text {
+  padding-top: 28px;
+  padding-bottom: 26px;
+
+  &--bg-white {
+    @include bg-color($white);
+  }
+}
+
+.map__desc {
+  @include mp-zero;
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
