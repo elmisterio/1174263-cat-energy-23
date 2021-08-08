@@ -1,7 +1,7 @@
 .main-section__wrapper-top {
-  height: 302px;
-  background: url(../img/cat-green.jpg) center no-repeat;
   @include bg-color($green);
+  height: 302px;
+  background: url("../img/cat-green.jpg") center no-repeat;
 }
 
 .main-section .main-title {

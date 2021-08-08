@@ -6,9 +6,9 @@
   font-weight: 400;
   font-display: swap;
   src:
-      local("Oswald"),
-      url("../fonts/oswaldregular.woff2") format("woff2"),
-      url("../fonts/oswaldregular.woff") format("woff");
+    local("Oswald"),
+    url("../fonts/oswaldregular.woff2") format("woff2"),
+    url("../fonts/oswaldregular.woff") format("woff");
 }
 
 @font-face {
@@ -17,11 +17,10 @@
   font-weight: 500;
   font-display: swap;
   src:
-      local("Oswald"),
-      url("../fonts/oswaldmedium.woff2") format("woff2"),
-      url("../fonts/oswaldmedium.woff") format("woff");
+    local("Oswald"),
+    url("../fonts/oswaldmedium.woff2") format("woff2"),
+    url("../fonts/oswaldmedium.woff") format("woff");
 }
-
 
 
 //Colors
@@ -40,7 +39,6 @@ $input-gray: rgba(205, 205, 205, 1);
 $input-dark-gray: rgba(186, 186, 186, 1);
 $input-dark-gray-30: rgba(186, 186, 186, 0.3);
 $black-gray: rgba(68, 68, 68, 1);
-
 
 
 //Other
