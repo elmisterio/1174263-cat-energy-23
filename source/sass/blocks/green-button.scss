@@ -1,11 +1,10 @@
 .green-button {
   @include bg-color($green);
+  @include font(16px, 20px);
   display: inline-block;
   width: 100%;
   padding-top: 7px;
   padding-bottom: 7px;
-  font-size: 16px;
-  line-height: 20px;
   text-align: center;
   text-transform: uppercase;
   color: $white;

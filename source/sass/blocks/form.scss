@@ -1,7 +1,6 @@
 .form {
+  @include font(16px, 18px);
   padding-bottom: 30px;
-  font-size: 16px;
-  line-height: 18px;
   color: $black-gray;
   text-transform: uppercase;
 }
@@ -34,16 +33,14 @@
 }
 
 .form__legend-title {
+  @include font(24px, 26px);
   margin-bottom: 35px;
-  font-size: 24px;
-  line-height: 26px;
   text-transform: none;
   color: $black;
 }
 
 .form__small-text {
-  font-family: "Arial", "Helvetica", sans-serif;
-  font-size: 14px;
-  line-height: 16px;
+  @include font(14px, 16px);
+  font-family: $ff-arial;
   text-transform: none;
 }

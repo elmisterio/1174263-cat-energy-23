@@ -6,15 +6,13 @@
 }
 
 .lose-gain-weight__title {
+  @include font(24px);
   @include mp-zero;
-  font-weight: 400;
-  font-size: 24px;
   text-transform: uppercase;
 }
 
 .lose-gain-weight__desc {
-  font-family: "Arial", "Helvetica", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
+  @include font(14px, 18px);
+  font-family: $ff-arial;
   color: $black-gray;
 }
