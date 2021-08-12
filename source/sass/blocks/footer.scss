@@ -1,0 +1,8 @@
+.footer {
+  @include bg-color($gray);
+}
+
+.footer__social-list {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}

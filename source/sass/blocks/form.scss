@@ -1,0 +1,46 @@
+.form {
+  @include font(16px, 18px);
+  padding-bottom: 30px;
+  color: $black-gray;
+  text-transform: uppercase;
+}
+
+.form input[placeholder],
+.form textarea[placeholder] {
+  text-transform: uppercase;
+}
+
+.form__wrapper {
+  margin-bottom: 10px;
+}
+
+.form__program-list,
+.form__contacts-list,
+.form__extra-list {
+  @include mp-zero;
+  list-style: none;
+}
+
+.form__program-item:not(:last-child),
+.form__contacts-item:not(:last-child),
+.form__extra-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.form__input-wrapper {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.form__legend-title {
+  @include font(24px, 26px);
+  margin-bottom: 35px;
+  text-transform: none;
+  color: $black;
+}
+
+.form__small-text {
+  @include font(14px, 16px);
+  font-family: $ff-arial;
+  text-transform: none;
+}

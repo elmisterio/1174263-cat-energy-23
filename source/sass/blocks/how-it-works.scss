@@ -1,0 +1,12 @@
+.how-it-works {
+  padding-top: 27px;
+  padding-bottom: 42px;
+}
+
+.how-it-works__list {
+  @include mp-zero;
+  @include font(14px, 18px);
+  font-family: $ff-arial;
+  list-style: none;
+  color: $black-gray;
+}

@@ -1,0 +1,13 @@
+.gift {
+  display: inline-block;
+  height: 289px;
+  background: url("../img/cat-gift.jpg") center no-repeat;
+  background-color: #68b738;
+  text-align: center;
+}
+
+.gift__title {
+  @include font(16px, 20px);
+  font-family: $ff-arial;
+  color: $white;
+}

@@ -1,0 +1,19 @@
+@mixin bg-color ($color) {
+  background-color: $color;
+}
+
+@mixin size ($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin mp-zero {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin font($font-size, $line-height: $font-size, $font-weight: 400) {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+}

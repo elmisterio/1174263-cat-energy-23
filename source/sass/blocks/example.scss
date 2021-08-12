@@ -1,0 +1,12 @@
+.example {
+  @include bg-color($gray);
+  padding-top: 27px;
+  padding-bottom: 25px;
+}
+
+.example__desc {
+  @include mp-zero;
+  @include font(14px, 18px);
+  font-family: $ff-arial;
+  color: $black-gray;
+}

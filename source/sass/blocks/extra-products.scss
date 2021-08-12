@@ -1,0 +1,28 @@
+.extra-products__title {
+  @include font(24px, 24px);
+  padding-bottom: 20px;
+  border-bottom: 1px solid $dark-gray;
+}
+
+.extra-products__list {
+  @include mp-zero;
+  list-style: none;
+}
+
+.extra-products__item {
+  padding-bottom: 20px;
+  border-bottom: 1px solid $dark-gray;
+}
+
+.extra-products__product-title {
+  @include font(16px, 16px);
+  color: $black-gray;
+  text-transform: uppercase;
+}
+
+.extra-products__weight,
+.extra-products__cost {
+  @include font(14px, 14px);
+  font-family: $ff-arial;
+  color: $black-gray;
+}

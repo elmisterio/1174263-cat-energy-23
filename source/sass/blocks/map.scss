@@ -1,0 +1,20 @@
+.map__title {
+  @include mp-zero;
+  @include font(16px);
+  text-transform: uppercase;
+}
+
+.map__text {
+  padding-top: 28px;
+  padding-bottom: 26px;
+
+  &--bg-white {
+    @include bg-color($white);
+  }
+}
+
+.map__desc {
+  @include mp-zero;
+  @include font(14px, 20px);
+  font-family: $ff-arial;
+}

@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="en">
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Кэт энерджи - Каталог продукции</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
   <header class="header container">
@@ -10,7 +11,7 @@
       <img class="logo__img" src="img/logo-mobile.svg" alt="Логотип Кэт Энерджи" width="191" height="38">
     </a>
 
-    <nav class="header__nav navigation">
+    <nav class="header__nav navigation off">
       <button class="navigation__burger" type="button"></button>
       <ul class="navigation__list">
         <li class="navigation__item navigation__item--current"><a href="index.html" class="navigation__link">Главная</a></li>
@@ -20,7 +21,7 @@
     </nav>
   </header>
 
-  <main class="main">
+  <main class="main-catalog container">
     <h1 class="visually-hidden">Функциональное питание для котов - Каталог продукции</h1>
 
     <section class="catalog">
@@ -39,7 +40,7 @@
             <dt class="description__term">Цена</dt>
             <dd class="description__detail">700 Р.</dd>
           </dl>
-          <button class="catalog__order-btn" type="button">Заказать</button>
+          <button class="catalog__order-btn green-button" type="button">Заказать</button>
         </li>
 
         <li class="catalog__product-item">
@@ -55,7 +56,7 @@
             <dt class="description__term">Цена</dt>
             <dd class="description__detail">1000 Р.</dd>
           </dl>
-          <button class="catalog__order-btn" type="button">Заказать</button>
+          <button class="catalog__order-btn green-button" type="button">Заказать</button>
         </li>
 
         <li class="catalog__product-item">
@@ -71,7 +72,7 @@
             <dt class="description__term">Цена</dt>
             <dd class="description__detail">700 Р.</dd>
           </dl>
-          <button class="catalog__order-btn" type="button">Заказать</button>
+          <button class="catalog__order-btn green-button" type="button">Заказать</button>
         </li>
 
         <li class="catalog__product-item">
@@ -87,7 +88,7 @@
             <dt class="description__term">Цена</dt>
             <dd class="description__detail">1000 Р.</dd>
           </dl>
-          <button class="catalog__order-btn" type="button">Заказать</button>
+          <button class="catalog__order-btn green-button" type="button">Заказать</button>
         </li>
 
         <li class="catalog__product-item">
@@ -103,7 +104,7 @@
             <dt class="description__term">Цена</dt>
             <dd class="description__detail">400 Р.</dd>
           </dl>
-          <button class="catalog__order-btn" type="button">Заказать</button>
+          <button class="catalog__order-btn green-button" type="button">Заказать</button>
         </li>
 
         <li class="catalog__product-item">
@@ -119,7 +120,7 @@
             <dt class="description__term">Цена</dt>
             <dd class="description__detail">700 Р.</dd>
           </dl>
-          <button class="catalog__order-btn" type="button">Заказать</button>
+          <button class="catalog__order-btn green-button" type="button">Заказать</button>
         </li>
 
         <li class="catalog__product-item">
@@ -135,14 +136,14 @@
             <dt class="description__term">Цена</dt>
             <dd class="description__detail">500 Р.</dd>
           </dl>
-          <button class="catalog__order-btn" type="button">Заказать</button>
+          <button class="catalog__order-btn green-button" type="button">Заказать</button>
         </li>
       </ul>
 
       <div class="catalog__show-more">
         <h3 class="catalog__product-title">Показать еще 100500 товаров</h3>
         <p class="catalog__desc">На самом деле вкусов гораздо больше!</p>
-        <button class="catalog__show-more-btn" type="button">Показать все</button>
+        <button class="catalog__show-more-btn green-button green-button--gray" type="button">Показать все</button>
       </div>
     </section>
 
@@ -153,28 +154,28 @@
           <h3 class="extra-products__product-title">Сахарозаменитель</h3>
           <span class="extra-products__weight">1 упаковка (100 г)</span>
           <span class="extra-products__cost">200 Р.</span>
-          <button class="extra-products__order-btn" type="button">Заказать</button>
+          <button class="extra-products__order-btn green-button" type="button">Заказать</button>
         </li>
 
         <li class="extra-products__item">
           <h3 class="extra-products__product-title">Питьевая вода</h3>
           <span class="extra-products__weight">5 литров</span>
           <span class="extra-products__cost">50 Р.</span>
-          <button class="extra-products__order-btn" type="button">Заказать</button>
+          <button class="extra-products__order-btn green-button" type="button">Заказать</button>
         </li>
 
         <li class="extra-products__item">
           <h3 class="extra-products__product-title">Молоко</h3>
           <span class="extra-products__weight">1 литр</span>
           <span class="extra-products__cost">100 Р.</span>
-          <button class="extra-products__order-btn" type="button">Заказать</button>
+          <button class="extra-products__order-btn green-button" type="button">Заказать</button>
         </li>
 
         <li class="extra-products__item">
           <h3 class="extra-products__product-title">Витамины</h3>
           <span class="extra-products__weight">1 упаковка (30 г)</span>
           <span class="extra-products__cost">300 Р.</span>
-          <button class="extra-products__order-btn" type="button">Заказать</button>
+          <button class="extra-products__order-btn green-button" type="button">Заказать</button>
         </li>
       </ul>
     </section>
@@ -187,29 +188,49 @@
   </main>
 
   <footer class="footer">
-    <a class="footer__logo logo logo--footer" href="index.html" aria-label="Логотип Кэт Энерджи в подвале сайта">
-      <img class="logo__img" src="img/logo-footer.svg" alt="Логотип Кэт Энерджи в подвале сайта" width="128" height="24">
-    </a>
-    <ul class="footer__social-list social">
-      <li class="social__item">
-        <a class="social__link social__link--vk" href="#" aria-label="Иконка Вконтакте">
-          <img class="social__img" src="img/social-vk.svg" alt="Иконка Вконтакте" width="22" height="22">
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--inst" href="#" aria-label="Иконка Инстаграм">
-          <img class="social__img" src="img/social-inst.svg" alt="Иконка Инстаграм" width="22" height="22">
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--fb" href="#" aria-label="Иконка Фейсбук">
-          <img class="social__img" src="img/social-fb.svg" alt="Иконка Фейсбук" width="22" height="22">
-        </a>
-      </li>
-    </ul>
-    <a class="footer__logo logo logo--academy" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип HTML Академии">
-      <img class="logo__img" src="img/logo-academy.svg" alt="Логотип HTML Академии" width="281" height="34">
-    </a>
+    <section class="footer__map map">
+      <div class="map__text container">
+        <h2 class="map__title">Приглашаем к сотрудничеству дилеров!</h2>
+        <p class="map__desc">
+          <span class="map__address-street">
+            ул. Большая
+            Конюшенная, д. 19/8
+          </span>
+          <span class="map__address-city">
+            Санкт-Петербург
+          </span>
+        </p>
+      </div>
+      <div class="map__map">
+        <img class="map__img" src="img/map.jpg" alt="Карта с меткой адреса" width="320" height="362">
+      </div>
+    </section>
+
+    <div class="container">
+      <a class="footer__logo logo logo--footer" href="index.html" aria-label="Логотип Кэт Энерджи в подвале сайта">
+        <img class="logo__img" src="img/logo-footer.svg" alt="Логотип Кэт Энерджи в подвале сайта" width="128" height="24">
+      </a>
+      <ul class="footer__social-list social">
+        <li class="social__item">
+          <a class="social__link social__link--vk" href="#" aria-label="Иконка Вконтакте">
+            <img class="social__img" src="img/social-vk.svg" alt="Иконка Вконтакте" width="22" height="22">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--inst" href="#" aria-label="Иконка Инстаграм">
+            <img class="social__img" src="img/social-inst.svg" alt="Иконка Инстаграм" width="22" height="22">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--fb" href="#" aria-label="Иконка Фейсбук">
+            <img class="social__img" src="img/social-fb.svg" alt="Иконка Фейсбук" width="22" height="22">
+          </a>
+        </li>
+      </ul>
+      <a class="footer__logo logo logo--academy" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип HTML Академии">
+        <img class="logo__img" src="img/logo-academy.svg" alt="Логотип HTML Академии" width="281" height="34">
+      </a>
+    </div>
   </footer>
 </body>
 </html>
