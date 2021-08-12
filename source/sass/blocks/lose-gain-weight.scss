@@ -1,18 +1,42 @@
 .lose-gain-weight__list {
-  @include bg-color($gray);
   @include mp-zero;
-  padding: 30px 33px 18px 20px;
   list-style: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.lose-gain-weight__item {
+  @include bg-color($gray);
+  padding: 30px 33px 18px 20px;
+}
+
+.lose-gain-weight__item:not(:nth-child(2n)) {
+  margin-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    margin-right: 80px;
+  }
 }
 
 .lose-gain-weight__title {
   @include font(24px);
   @include mp-zero;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    @include font(36px);
+  }
 }
 
 .lose-gain-weight__desc {
   @include font(14px, 18px);
   font-family: $ff-arial;
   color: $black-gray;
+
+  @media (min-width: $tablet-width) {
+    @include font(16px, 24px);
+  }
 }

@@ -9,4 +9,28 @@
   font-family: $ff-arial;
   list-style: none;
   color: $black-gray;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
+
+.how-it-works__item {
+  @media (min-width: $tablet-width) {
+    width: 245px;
+  }
+}
+
+.how-it-works__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.how-it-works__item:not(:nth-child(2n)) {
+  @media (min-width: $tablet-width) {
+    margin-right: 20px;
+  }
+
+}
+

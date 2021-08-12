@@ -2,4 +2,10 @@
   padding-top: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid $dark-gray;
+  background-color: transparent;;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
