@@ -33,7 +33,7 @@
 
   @media (min-width: $tablet-width) {
     height: 220px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     background: none;
   }
 }
@@ -88,8 +88,8 @@
 
 .main-section__button {
   @media (min-width: $tablet-width) {
-    width: auto;
-    padding: 10px 10px;
     @include font(20px);
+    width: auto;
+    padding: 10px;
   }
 }

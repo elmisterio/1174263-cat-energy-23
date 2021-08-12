@@ -9,7 +9,6 @@
   @include font(16px);
   width: 180px;
   text-transform: uppercase;
-
 }
 
 .map__text {
@@ -52,7 +51,4 @@
   @media (min-width: $tablet-width) {
     height: 400px;
   }
-
-
-
 }
