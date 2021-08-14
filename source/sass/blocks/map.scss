@@ -1,20 +1,54 @@
+.map {
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
 .map__title {
   @include mp-zero;
   @include font(16px);
+  width: 180px;
   text-transform: uppercase;
 }
 
 .map__text {
+  display: flex;
+  justify-content: space-between;
   padding-top: 28px;
   padding-bottom: 26px;
 
   &--bg-white {
     @include bg-color($white);
   }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 95px;
+    left: 15%;
+  }
 }
 
 .map__desc {
   @include mp-zero;
   @include font(14px, 20px);
+
+  display: flex;
+  flex-direction: column;
+  width: 180px;
   font-family: $ff-arial;
+}
+
+.map__map {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.map__img {
+  width: 100%;
+  height: 362px;
+  object-fit: cover;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }
