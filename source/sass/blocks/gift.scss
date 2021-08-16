@@ -1,8 +1,10 @@
 .gift {
   display: inline-block;
   height: 289px;
+  width: 100%;
   background: url("../img/cat-gift.jpg") center no-repeat;
-  background-color: #68b738;
+  background-size: cover;
+  background-color: $green;
   text-align: center;
 }
 

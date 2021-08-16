@@ -38,24 +38,18 @@
   }
 }
 
-.main-section .main-title {
+.main-section__title {
   color: $white;
   padding-top: 27px;
 
   @media (min-width: $tablet-width) {
-    @include font(60px);
     width: 420px;
     color: $black;
   }
 }
 
-.main-section .main-subtitle {
+.main-section__subtitle {
   color: $white;
-
-  @media (min-width: $tablet-width) {
-    @include font(20px);
-    color: $black;
-  }
 }
 
 .main-section__wrapper-bottom {

@@ -8,9 +8,23 @@
 .catalog__products-list {
   @include mp-zero;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 60px;
+  }
 }
 
 .catalog__product-item {
+  box-sizing: border-box;
+  height: 374px;
   padding-bottom: 20px;
   margin-bottom: 20px;
   border-bottom: 1px solid $dark-gray;

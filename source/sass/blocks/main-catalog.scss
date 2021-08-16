@@ -1,0 +1,7 @@
+.main-catalog__grid-wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 60px;
+  }
+}

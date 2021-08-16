@@ -2,6 +2,7 @@
 <html class="page" lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи - Каталог продукции</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -11,7 +12,7 @@
       <img class="logo__img" src="img/logo-mobile.svg" alt="Логотип Кэт Энерджи" width="191" height="38">
     </a>
 
-    <nav class="header__nav navigation off">
+    <nav class="header__nav navigation">
       <button class="navigation__burger" type="button"></button>
       <ul class="navigation__list">
         <li class="navigation__item navigation__item--current"><a href="index.html" class="navigation__link">Главная</a></li>
@@ -138,58 +139,60 @@
           </dl>
           <button class="catalog__order-btn green-button" type="button">Заказать</button>
         </li>
-      </ul>
 
-      <div class="catalog__show-more">
-        <h3 class="catalog__product-title">Показать еще 100500 товаров</h3>
-        <p class="catalog__desc">На самом деле вкусов гораздо больше!</p>
-        <button class="catalog__show-more-btn green-button green-button--gray" type="button">Показать все</button>
-      </div>
-    </section>
-
-    <section class="extra-products">
-      <h2 class="extra-products__title">Дополнительные товары</h2>
-      <ul class="extra-products__list">
-        <li class="extra-products__item">
-          <h3 class="extra-products__product-title">Сахарозаменитель</h3>
-          <span class="extra-products__weight">1 упаковка (100 г)</span>
-          <span class="extra-products__cost">200 Р.</span>
-          <button class="extra-products__order-btn green-button" type="button">Заказать</button>
-        </li>
-
-        <li class="extra-products__item">
-          <h3 class="extra-products__product-title">Питьевая вода</h3>
-          <span class="extra-products__weight">5 литров</span>
-          <span class="extra-products__cost">50 Р.</span>
-          <button class="extra-products__order-btn green-button" type="button">Заказать</button>
-        </li>
-
-        <li class="extra-products__item">
-          <h3 class="extra-products__product-title">Молоко</h3>
-          <span class="extra-products__weight">1 литр</span>
-          <span class="extra-products__cost">100 Р.</span>
-          <button class="extra-products__order-btn green-button" type="button">Заказать</button>
-        </li>
-
-        <li class="extra-products__item">
-          <h3 class="extra-products__product-title">Витамины</h3>
-          <span class="extra-products__weight">1 упаковка (30 г)</span>
-          <span class="extra-products__cost">300 Р.</span>
-          <button class="extra-products__order-btn green-button" type="button">Заказать</button>
+        <li class="catalog__show-more">
+          <h3 class="catalog__product-title">Показать еще 100500 товаров</h3>
+          <p class="catalog__desc">На самом деле вкусов гораздо больше!</p>
+          <button class="catalog__show-more-btn green-button green-button--gray" type="button">Показать все</button>
         </li>
       </ul>
     </section>
 
-    <aside class="gift">
-      <h2 class="visually-hidden">Промо-блок с подарками</h2>
-      <img src="img/gift-icon.svg" alt="Иконка с изображением подарка" class="gift__img" width="78" height="80">
-      <h4 class="gift__title">Закажите все и получите чехол для кота в подарок!</h4>
-    </aside>
+    <div class="main-catalog__grid-wrapper">
+      <section class="extra-products">
+        <h2 class="extra-products__title">Дополнительные товары</h2>
+        <ul class="extra-products__list">
+          <li class="extra-products__item">
+            <h3 class="extra-products__product-title">Сахарозаменитель</h3>
+            <span class="extra-products__weight">1 упаковка (100 г)</span>
+            <span class="extra-products__cost">200 Р.</span>
+            <button class="extra-products__order-btn green-button" type="button">Заказать</button>
+          </li>
+
+          <li class="extra-products__item">
+            <h3 class="extra-products__product-title">Питьевая вода</h3>
+            <span class="extra-products__weight">5 литров</span>
+            <span class="extra-products__cost">50 Р.</span>
+            <button class="extra-products__order-btn green-button" type="button">Заказать</button>
+          </li>
+
+          <li class="extra-products__item">
+            <h3 class="extra-products__product-title">Молоко</h3>
+            <span class="extra-products__weight">1 литр</span>
+            <span class="extra-products__cost">100 Р.</span>
+            <button class="extra-products__order-btn green-button" type="button">Заказать</button>
+          </li>
+
+          <li class="extra-products__item">
+            <h3 class="extra-products__product-title">Витамины</h3>
+            <span class="extra-products__weight">1 упаковка (30 г)</span>
+            <span class="extra-products__cost">300 Р.</span>
+            <button class="extra-products__order-btn green-button" type="button">Заказать</button>
+          </li>
+        </ul>
+      </section>
+
+      <aside class="gift">
+        <h2 class="visually-hidden">Промо-блок с подарками</h2>
+        <img src="img/gift-icon.svg" alt="Иконка с изображением подарка" class="gift__img" width="78" height="80">
+        <h4 class="gift__title">Закажите все и получите чехол для кота в подарок!</h4>
+      </aside>
+    </div>
   </main>
 
   <footer class="footer">
     <section class="footer__map map">
-      <div class="map__text container">
+      <div class="map__text map__text--bg-white container">
         <h2 class="map__title">Приглашаем к сотрудничеству дилеров!</h2>
         <p class="map__desc">
           <span class="map__address-street">
@@ -207,29 +210,31 @@
     </section>
 
     <div class="container">
-      <a class="footer__logo logo logo--footer" href="index.html" aria-label="Логотип Кэт Энерджи в подвале сайта">
-        <img class="logo__img" src="img/logo-footer.svg" alt="Логотип Кэт Энерджи в подвале сайта" width="128" height="24">
-      </a>
-      <ul class="footer__social-list social">
-        <li class="social__item">
-          <a class="social__link social__link--vk" href="#" aria-label="Иконка Вконтакте">
-            <img class="social__img" src="img/social-vk.svg" alt="Иконка Вконтакте" width="22" height="22">
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--inst" href="#" aria-label="Иконка Инстаграм">
-            <img class="social__img" src="img/social-inst.svg" alt="Иконка Инстаграм" width="22" height="22">
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--fb" href="#" aria-label="Иконка Фейсбук">
-            <img class="social__img" src="img/social-fb.svg" alt="Иконка Фейсбук" width="22" height="22">
-          </a>
-        </li>
-      </ul>
-      <a class="footer__logo logo logo--academy" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип HTML Академии">
-        <img class="logo__img" src="img/logo-academy.svg" alt="Логотип HTML Академии" width="281" height="34">
-      </a>
+      <div class="footer__wrapper">
+        <a class="footer__logo logo logo--footer" href="index.html" aria-label="Логотип Кэт Энерджи в подвале сайта">
+          <img class="logo__img" src="img/logo-footer.svg" alt="Логотип Кэт Энерджи в подвале сайта" width="128" height="24">
+        </a>
+        <ul class="footer__social-list social">
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="#" aria-label="Иконка Вконтакте">
+              <img class="social__img" src="img/social-vk.svg" alt="Иконка Вконтакте" width="22" height="22">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--inst" href="#" aria-label="Иконка Инстаграм">
+              <img class="social__img" src="img/social-inst.svg" alt="Иконка Инстаграм" width="22" height="22">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--fb" href="#" aria-label="Иконка Фейсбук">
+              <img class="social__img" src="img/social-fb.svg" alt="Иконка Фейсбук" width="22" height="22">
+            </a>
+          </li>
+        </ul>
+        <a class="footer__logo logo logo--academy" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип HTML Академии">
+          <img class="logo__img" src="img/logo-academy.svg" alt="Логотип HTML Академии" width="163" height="34">
+        </a>
+      </div>
     </div>
   </footer>
 </body>
