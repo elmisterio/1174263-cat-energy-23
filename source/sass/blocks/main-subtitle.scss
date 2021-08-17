@@ -1,4 +1,10 @@
 .main-subtitle {
+  @include mp-zero;
   @include font(14px);
+  color: $black;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    @include font(20px);
+  }
 }

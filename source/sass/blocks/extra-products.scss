@@ -12,6 +12,12 @@
 .extra-products__item {
   padding-bottom: 20px;
   border-bottom: 1px solid $dark-gray;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 2fr;
+    gap: 60px;
+  }
 }
 
 .extra-products__product-title {
