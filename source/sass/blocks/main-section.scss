@@ -1,35 +1,33 @@
 .main-section {
-  overflow: hidden;
-
   @media (min-width: $tablet-width) {
     height: 850px;
     padding-left: 90px;
+    margin-bottom: 9px;
   }
 
   @media (min-width: $desktop-width) {
     position: relative;
+    margin-bottom: 56px;
     height: 600px;
   }
 }
 
-.main-section__bg {
-  display: none;
+// .main-section__bg {
+//   display: none;
 
-  @media (min-width: $desktop-width) {
-    display: block;
-    height: 700px;
-    position: absolute;
-    z-index: -15;
-    top: -100px;
-    right: -250px;
-  }
-}
+//   @media (min-width: $desktop-width) {
+//     display: block;
+//     height: 700px;
+//     position: absolute;
+//     z-index: -15;
+//     top: -100px;
+//     right: -250px;
+//   }
+// }
 
 .main-section__wrapper-top {
-  @include bg-color($green);
   height: 302px;
-  background: url("../img/cat-green.jpg") center no-repeat;
-  margin-bottom: 140px;
+  margin-bottom: 138px;
 
   @media (min-width: $tablet-width) {
     height: 220px;
@@ -38,44 +36,75 @@
   }
 }
 
+.main-section__wrapper-top.container,
+.main-section__wrapper-bottom.container  {
+  @media (min-width: $desktop-width) {
+    padding-left: 180px;
+  }
+}
+
 .main-section__title {
-  color: $white;
   padding-top: 27px;
+  margin-bottom: 24px;
+  text-align: center;
+  color: $white;
 
   @media (min-width: $tablet-width) {
+    padding-top: 50px;
+    margin-bottom: 40px;
     width: 420px;
+    text-align: left;
     color: $black;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 103px;
   }
 }
 
 .main-section__subtitle {
+  text-align: center;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    color: $black;
+  }
 }
 
 .main-section__wrapper-bottom {
-  position: relative;
   padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 600px;
+    padding-top: 58px;
+    padding-bottom: 400px;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 114px;
+    padding-bottom: 40px;
+    margin-bottom: 10px;
   }
 }
 
 .main-section__img {
   position: absolute;
-  bottom: 80px;
+  bottom: 70px;
+  width: 300px;
   left: 50%;
   transform: translateX(-50%);
 
   @media (min-width: $tablet-width) {
-    bottom: 20px;
+    bottom: 0;
+    left: 52%;
     z-index: -10;
-    width: 700px;
+    width: 660px;
   }
 
   @media (min-width: $desktop-width) {
-    top: -130px;
-    left: 620px;
+    bottom: 80px;
+    left: 56%;
     width: 550px;
   }
 }
@@ -83,7 +112,7 @@
 .main-section__button {
   @media (min-width: $tablet-width) {
     @include font(20px);
+    padding: 18px 27px;
     width: auto;
-    padding: 10px;
   }
 }

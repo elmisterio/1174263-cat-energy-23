@@ -1,7 +1,7 @@
 .form {
   @include font(16px, 18px);
   padding-bottom: 30px;
-  color: $black-gray;
+  color: $dark-gray-3;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
