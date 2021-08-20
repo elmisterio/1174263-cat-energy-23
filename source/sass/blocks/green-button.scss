@@ -1,6 +1,7 @@
 .green-button {
   @include bg-color($green);
   @include font(14px, 20px);
+
   display: inline-block;
   width: 100%;
   padding: 10px 0;
@@ -20,6 +21,7 @@
 
   &--gray {
     @include bg-color($gray-1);
+
     color: $dark-gray-3;
   }
 }

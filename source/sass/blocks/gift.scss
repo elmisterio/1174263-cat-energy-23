@@ -1,15 +1,17 @@
 .gift {
+  @include bg-color($green);
+
   display: inline-block;
   height: 289px;
   width: 100%;
   background: url("../img/cat-gift.jpg") center no-repeat;
   background-size: cover;
-  background-color: $green;
   text-align: center;
 }
 
 .gift__title {
   @include font(16px, 20px);
+
   font-family: $ff-arial;
   color: $white;
 }

@@ -1,5 +1,6 @@
 .form {
   @include font(16px, 18px);
+
   padding-bottom: 30px;
   color: $dark-gray-3;
   text-transform: uppercase;
@@ -28,6 +29,7 @@
 
 .form__text {
   @include mp-zero;
+
   width: 100%;
 }
 
@@ -46,6 +48,7 @@
 .form__contacts-list,
 .form__extra-list {
   @include mp-zero;
+
   list-style: none;
 }
 
@@ -57,6 +60,7 @@
 
 .form__legend-title {
   @include font(24px, 26px);
+
   margin-bottom: 35px;
   text-transform: none;
   color: $black;
@@ -99,6 +103,7 @@
 
 .form__small-text {
   @include font(14px, 16px);
+
   font-family: $ff-arial;
   text-transform: none;
 }

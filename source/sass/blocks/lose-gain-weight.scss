@@ -1,5 +1,6 @@
 .lose-gain-weight__list {
   @include mp-zero;
+
   list-style: none;
 
   @media (min-width: $desktop-width) {
@@ -10,6 +11,7 @@
 
 .lose-gain-weight__item {
   @include bg-color($gray-1);
+
   padding: 37px 33px 21px 20px;
   position: relative;
 
@@ -70,17 +72,20 @@
 .lose-gain-weight__title {
   @include font(24px);
   @include mp-zero;
+
   position: relative;
   padding-left: 70px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     @include font(36px);
+
     padding-left: 33px;
   }
 
   @media (min-width: $desktop-width) {
     @include font(36px);
+
     padding-left: 194px;
   }
 
@@ -145,7 +150,6 @@
     width: 480px;
     margin-top: 74px;
     padding-bottom: 8px;
-
   }
 }
 
@@ -164,8 +168,6 @@
   &:active {
     opacity: 0.3;
   }
-
-
 
   &::after {
     content: "";

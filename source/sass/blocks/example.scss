@@ -19,6 +19,7 @@
 .example__bottom {
   @media (min-width: $desktop-width) {
     @include bg-color($gray-1);
+
     padding-top: 71px;
   }
 }
@@ -85,12 +86,14 @@
 .example__desc {
   @include mp-zero;
   @include font(14px, 18px);
+
   margin-bottom: 25px;
   font-family: $ff-arial;
   color: $dark-gray-2;
 
   @media (min-width: $tablet-width) {
     @include font(16px, 24px);
+
     width: 680px;
     margin-bottom: 50px;
   }
@@ -113,6 +116,7 @@
 
 .example__goal {
   @include font(24px);
+
   position: relative;
   box-sizing: border-box;
   padding: 16px 0;
@@ -124,6 +128,7 @@
 
   @media (min-width: $tablet-width) {
     @include font(30px, 37px);
+
     width: 162px;
   }
 
@@ -138,6 +143,8 @@
   &--weight::after,
   &--days::after {
     @include font(12px);
+    @include bg-color($gray-2);
+
     position: absolute;
     padding: 0 15px;
     content: "снижение веса";
@@ -147,19 +154,19 @@
     font-family: $ff-arial;
     color: $dark-gray-2;
     text-transform: lowercase;
-    background-color: $gray-2;
 
     @media (min-width: $tablet-width) {
       @include font(14px);
+      @include bg-color($white);
+
       padding: 0 5px;
       top: 65px;
       left: 10px;
       width: 129px;
-      background-color: $white;
     }
 
     @media (min-width: $tablet-width) {
-      background-color: $gray-2;
+      @include bg-color($gray-2);
     }
   }
 
@@ -269,12 +276,15 @@
 
   @media (min-width: $tablet-width) {
     @include font(20px, 30px);
+
     text-decoration: underline $black-30;
     text-decoration-style: dotted;
   }
 }
 
 .example__white-bar {
+  @include bg-color($white);
+
   position: relative;
   margin-left: 16px;
   margin-right: 16px;
@@ -282,24 +292,25 @@
   left: 4px;
   width: 84px;
   height: 14px;
-  background-color: $white;
   border-radius: 10px;
 
   @media (min-width: $tablet-width) {
+    @include bg-color($basic-gray);
+
     position: relative;
     width: 440px;
     height: 6px;
-    background-color: $basic-gray;
   }
 }
 
 .example__green-bar {
+  @include bg-color($green);
+
   position: absolute;
   top: 4px;
   left: 5px;
   width: 35px;
   height: 6px;
-  background-color: $green;
   border-radius: 10px;
 
   @media (min-width: $tablet-width) {
@@ -309,12 +320,13 @@
 
 .example__range-control {
   @media (min-width: $tablet-width) {
+    @include bg-color($green);
+
     position: absolute;
     top: -2px;
     left: 50%;
     width: 8px;
     height: 8px;
-    background-color: $green;
     border-radius: 50%;
     cursor: pointer;
   }
@@ -332,6 +344,5 @@
       box-shadow: 0 2px 5px $black-30;
       cursor: pointer;
     }
-
   }
 }

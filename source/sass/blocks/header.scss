@@ -25,14 +25,15 @@
 }
 
 .header__wrapper-top {
+  @include bg-color($white);
+
   display: flex;
   align-items: center;
   min-height: 65px;
-  background-color: $white;
 
   @media (min-width: $tablet-width) {
+    @include bg-color(transparent);
     width: 150px;
-    background-color: transparent;
   }
 
   @media (min-width: $desktop-width) {

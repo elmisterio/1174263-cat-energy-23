@@ -12,19 +12,6 @@
   }
 }
 
-// .main-section__bg {
-//   display: none;
-
-//   @media (min-width: $desktop-width) {
-//     display: block;
-//     height: 700px;
-//     position: absolute;
-//     z-index: -15;
-//     top: -100px;
-//     right: -250px;
-//   }
-// }
-
 .main-section__wrapper-top {
   height: 302px;
   margin-bottom: 138px;
@@ -37,7 +24,7 @@
 }
 
 .main-section__wrapper-top.container,
-.main-section__wrapper-bottom.container  {
+.main-section__wrapper-bottom.container {
   @media (min-width: $desktop-width) {
     padding-left: 180px;
   }
@@ -112,6 +99,7 @@
 .main-section__button {
   @media (min-width: $tablet-width) {
     @include font(20px);
+
     padding: 18px 27px;
     width: auto;
   }

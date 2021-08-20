@@ -39,6 +39,7 @@
 .map__title {
   @include mp-zero;
   @include font(16px, 20px);
+
   width: 180px;
   text-transform: uppercase;
 

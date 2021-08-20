@@ -9,6 +9,8 @@
 }
 
 .navigation__burger {
+  @include bg-color(transparent);
+
   display: none;
   position: absolute;
   bottom: 0;
@@ -16,7 +18,6 @@
   z-index: 2;
   width: 70px;
   height: 50px;
-  background-color: transparent;
   cursor: pointer;
   border: none;
 
@@ -30,26 +31,28 @@
 }
 
 .navigation__burger-line {
+  @include bg-color($black);
+
   position: absolute;
   top: 15px;
   left: 26px;
   width: 24px;
   height: 2px;
-  background-color: $black;
   transition: all 0.3s ease-out;
 
   &--closed {
     &::before,
     &::after {
-    content: "";
-    position: absolute;
-    bottom: 8px;
-    left: 0;
-    width: 24px;
-    height: 2px;
-    background-color: $black;
-    transition: all 0.3s ease-out;
-  }
+      @include bg-color($black);
+
+      content: "";
+      position: absolute;
+      bottom: 8px;
+      left: 0;
+      width: 24px;
+      height: 2px;
+      transition: all 0.3s ease-out;
+    }
 
     &::after {
       top: 8px;
@@ -57,20 +60,21 @@
   }
 
   &--opened {
-    background-color: transparent;
+    @include bg-color(transparent);
 
     &::before,
     &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 25px;
-    height: 2px;
-    background-color: $black;
-    transform: rotate(45deg);
-    transition: all 0.3s ease-out;
-  }
+      @include bg-color($black);
+
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 25px;
+      height: 2px;
+      transform: rotate(45deg);
+      transition: all 0.3s ease-out;
+    }
 
     &::after {
       transform: rotate(-45deg);
@@ -80,7 +84,8 @@
 
 .navigation__list {
   @include mp-zero;
-  background-color: $white;
+  @include bg-color($white);
+
   list-style: none;
 
   &--closed {
@@ -95,18 +100,20 @@
   }
 
   @media (min-width: $tablet-width) {
+    @include bg-color(transparent);
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     min-width: 450px;
     height: 100%;
-    background-color: transparent;
   }
 }
 
 .navigation__item {
   @include font(20px);
+
   position: relative;
   padding-top: 23px;
   padding-bottom: 23px;
@@ -147,18 +154,19 @@
 
   &:hover::after {
     @media (min-width: $tablet-width) {
+      @include bg-color($green);
+
       content: "";
       position: absolute;
       left: 0;
       bottom: 14px;
       width: 100%;
       height: 2px;
-      background-color: $green;
       animation: underline 0.4s ease-out;
     }
 
     @media (min-width: $desktop-width) {
-      background-color: $white;
+      @include bg-color($white);
     }
   }
 
@@ -167,18 +175,19 @@
 
     &::after {
       @media (min-width: $tablet-width) {
+        @include bg-color($green);
+
         content: "";
         position: absolute;
         left: 0;
         bottom: 14px;
         width: 100%;
         height: 2px;
-        background-color: $green;
         animation: underline 0.4s;
       }
 
       @media (min-width: $desktop-width) {
-        background-color: $white;
+        @include bg-color($white);
       }
     }
   }

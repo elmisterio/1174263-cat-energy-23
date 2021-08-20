@@ -21,6 +21,7 @@
 .how-it-works__list {
   @include mp-zero;
   @include font(14px, 18px);
+
   font-family: $ff-arial;
   list-style: none;
   color: $dark-gray-2;
@@ -100,7 +101,6 @@
       font-size: 280px;
       color: $gray-1;
     }
-
   }
 
   &--1::after {
@@ -134,4 +134,3 @@
     margin-right: -15px;
   }
 }
-
