@@ -3,6 +3,11 @@
 }
 
 .header__wrapper {
+  @media (max-width: $mobile-only) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -16,8 +21,7 @@
   }
 }
 
-.header__wrapper .container,
-.header__wrapper.container {
+.header__wrapper .container {
   @media (max-width: $mobile-only) {
     padding-left: 0;
     padding-right: 0;

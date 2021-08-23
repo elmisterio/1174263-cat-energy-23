@@ -11,20 +11,6 @@
   padding-top: 28px;
   padding-bottom: 26px;
 
-  @media (min-width: $desktop-width) {
-    position: absolute;
-    top: 96px;
-    left: 18%;
-    width: 428px;
-    padding: 62px 60px 62px 82px;
-  }
-
-  &--bg-white {
-    @include bg-color($white);
-  }
-}
-
-.map__text.container {
   @media (min-width: $tablet-width) {
     padding-left: 70px;
     padding-right: 70px;
@@ -32,7 +18,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 80px;
+    position: absolute;
+    top: 96px;
+    left: 18%;
+    width: 428px;
+    padding: 62px 60px 62px 80px;
+  }
+
+  &--bg-white {
+    @include bg-color($white);
   }
 }
 

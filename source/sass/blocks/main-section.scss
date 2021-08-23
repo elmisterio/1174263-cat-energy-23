@@ -23,8 +23,8 @@
   }
 }
 
-.main-section__wrapper-top.container,
-.main-section__wrapper-bottom.container {
+.main-section__wrapper-top,
+.main-section__wrapper-bottom {
   @media (min-width: $desktop-width) {
     padding-left: 180px;
   }

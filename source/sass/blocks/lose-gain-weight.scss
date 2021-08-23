@@ -55,7 +55,7 @@
   }
 }
 
-.lose-gain-weight__item:not(:nth-child(2n)) {
+.lose-gain-weight__item:nth-child(2n+1) {
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
