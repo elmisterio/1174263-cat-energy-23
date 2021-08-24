@@ -1,6 +1,7 @@
 .green-button {
   @include bg-color($green);
-  @include font(16px, 20px);
+  @include font(14px, 20px);
+
   display: inline-block;
   width: 100%;
   padding: 10px 0;
@@ -10,8 +11,17 @@
   outline: none;
   border: none;
 
+  &:hover {
+    @include bg-color($green-2);
+  }
+
+  &:active {
+    color: $white-30;
+  }
+
   &--gray {
-    @include bg-color($gray);
-    color: $black-gray;
+    @include bg-color($gray-1);
+
+    color: $dark-gray-3;
   }
 }

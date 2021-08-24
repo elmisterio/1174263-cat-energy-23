@@ -1,11 +1,73 @@
 .header {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid $dark-gray;
-  background-color: transparent;
+  position: relative;
+}
+
+.header__wrapper {
+  @media (max-width: $mobile-only) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    padding-top: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+  }
+}
+
+.header__wrapper .container {
+  @media (max-width: $mobile-only) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.header__wrapper-top {
+  @include bg-color($white);
+
+  display: flex;
+  align-items: center;
+  min-height: 65px;
+
+  @media (min-width: $tablet-width) {
+    @include bg-color(transparent);
+    width: 150px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+  }
+}
+
+.header__wrapper-top .container {
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.header__bg {
+  position: absolute;
+  z-index: -10;
+  height: 302px;
+  width: 100%;
+  object-fit: cover;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: 50%;
+    height: 694px;
+    top: 0;
+    right: 0;
   }
 }

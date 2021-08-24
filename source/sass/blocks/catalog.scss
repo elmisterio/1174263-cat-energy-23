@@ -2,11 +2,12 @@
   padding-top: 27px;
   padding-bottom: 33px;
   margin-bottom: 20px;
-  border-bottom: 1px solid $dark-gray;
+  border-bottom: 1px solid $dark-gray-1;
 }
 
 .catalog__products-list {
   @include mp-zero;
+
   list-style: none;
 
   @media (min-width: $tablet-width) {
@@ -27,15 +28,16 @@
   height: 374px;
   padding-bottom: 20px;
   margin-bottom: 20px;
-  border-bottom: 1px solid $dark-gray;
+  border-bottom: 1px solid $dark-gray-1;
 }
 
 .catalog__product-title {
   @include font(16px, 20px);
+
   text-transform: uppercase;
 }
 
 .catalog__show-more {
   padding-bottom: 20px;
-  border-bottom: 1px solid $dark-gray;
+  border-bottom: 1px solid $dark-gray-1;
 }

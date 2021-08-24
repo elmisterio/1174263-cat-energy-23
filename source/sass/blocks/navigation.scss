@@ -1,5 +1,5 @@
 .navigation {
-  display: none;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -8,26 +8,193 @@
   }
 }
 
+.navigation__burger {
+  @include bg-color(transparent);
+
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  width: 70px;
+  height: 50px;
+  cursor: pointer;
+  border: none;
+
+  &--visible {
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.navigation__burger-line {
+  @include bg-color($black);
+
+  position: absolute;
+  top: 15px;
+  left: 26px;
+  width: 24px;
+  height: 2px;
+  transition: all 0.3s ease-out;
+
+  &--closed {
+    &::before,
+    &::after {
+      @include bg-color($black);
+
+      content: "";
+      position: absolute;
+      bottom: 8px;
+      left: 0;
+      width: 24px;
+      height: 2px;
+      transition: all 0.3s ease-out;
+    }
+
+    &::after {
+      top: 8px;
+    }
+  }
+
+  &--opened {
+    @include bg-color(transparent);
+
+    &::before,
+    &::after {
+      @include bg-color($black);
+
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 25px;
+      height: 2px;
+      transform: rotate(45deg);
+      transition: all 0.3s ease-out;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
 .navigation__list {
   @include mp-zero;
+  @include bg-color($white);
 
   list-style: none;
 
+  &--closed {
+    display: none;
+  }
+
+  &--opened {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+  }
+
   @media (min-width: $tablet-width) {
+    @include bg-color(transparent);
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    min-width: 450px;
     height: 100%;
   }
 }
 
 .navigation__item {
+  @include font(20px);
+
+  position: relative;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  text-transform: uppercase;
+  text-align: center;
+  border-top: 1px solid $gray-2;
+
   @media (min-width: $tablet-width) {
+    @include font(18px, 24px);
+
     margin-left: 10px;
+    border-top: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 54px;
+  }
+
+  &:hover .navigation__link {
+    @media (min-width: $tablet-width) {
+      color: $black-60;
+    }
+
+    @media (min-width: $desktop-width) {
+      color: $white-60;
+    }
+  }
+
+  &:active .navigation__link {
+    @media (min-width: $tablet-width) {
+      color: $black-30;
+    }
+
+    @media (min-width: $desktop-width) {
+      color: $white-30;
+    }
+  }
+
+  &:hover::after {
+    @media (min-width: $tablet-width) {
+      @include bg-color($green);
+
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 14px;
+      width: 100%;
+      height: 2px;
+      animation: underline 0.4s ease-out;
+    }
+
+    @media (min-width: $desktop-width) {
+      @include bg-color($white);
+    }
+  }
+
+  &--current {
+    position: relative;
+
+    &::after {
+      @media (min-width: $tablet-width) {
+        @include bg-color($green);
+
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 14px;
+        width: 100%;
+        height: 2px;
+        animation: underline 0.4s;
+      }
+
+      @media (min-width: $desktop-width) {
+        @include bg-color($white);
+      }
+    }
   }
 }
 
-.navigation__burger {
-  display: none;
+.navigation__link {
+  @media (min-width: $desktop-width) {
+    color: $white;
+  }
 }

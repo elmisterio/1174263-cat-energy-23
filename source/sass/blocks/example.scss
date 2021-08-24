@@ -1,20 +1,25 @@
 .example {
-  @include bg-color($gray);
-  padding-top: 27px;
-  padding-bottom: 25px;
+  @include bg-color($gray-2);
+
+  padding-top: 29px;
+  padding-bottom: 37px;
 
   @media (min-width: $tablet-width) {
     @include bg-color($white);
-  }
-}
 
-.example__bottom {
+    padding-top: 43px;
+  }
+
   @media (min-width: $desktop-width) {
-    @include bg-color($gray);
+    padding-top: 21px;
+    padding-bottom: 0;
   }
 }
 
-.example__wrapper {
+.example__wrapper-container {
+  padding-left: 0;
+  padding-right: 0;
+
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
@@ -30,19 +35,26 @@
   }
 }
 
-.example__wrapper-bottom {
+.example__wrapper-top-container {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
   @media (min-width: $desktop-width) {
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 700px;
+    padding: 0;
+    margin: 0;
   }
 }
 
 .example__wrapper-middle {
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
@@ -50,46 +62,286 @@
   }
 }
 
+.example__bottom {
+  @media (min-width: $desktop-width) {
+    @include bg-color($gray-1);
+
+    padding-top: 71px;
+  }
+}
+
+.example__title {
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 76px;
+  }
+}
+
 .example__desc {
   @include mp-zero;
   @include font(14px, 18px);
+
+  margin-bottom: 25px;
   font-family: $ff-arial;
-  color: $black-gray;
+  color: $dark-gray-2;
+
+  @media (min-width: $tablet-width) {
+    @include font(16px, 24px);
+
+    width: 680px;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 435px;
+    margin-bottom: 68px;
+  }
 }
 
 .example__goals {
+  display: flex;
+  justify-content: space-between;
+
   @media (min-width: $tablet-width) {
-    display: flex;
     justify-content: flex-start;
+    height: 74px;
+  }
+}
+
+.example__goal {
+  @include font(24px);
+
+  position: relative;
+  box-sizing: border-box;
+  padding: 16px 0;
+  width: 124px;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid $gray-3;
+  border-radius: 3px;
+
+  @media (min-width: $tablet-width) {
+    @include font(30px, 37px);
+
+    width: 162px;
+  }
+
+  &--weight {
+    margin-right: 10px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 42px;
+    }
+  }
+
+  &--weight::after,
+  &--days::after {
+    @include font(12px);
+    @include bg-color($gray-2);
+
+    position: absolute;
+    padding: 0 15px;
+    content: "снижение веса";
+    top: 47px;
+    left: 14px;
+    width: 60px;
+    font-family: $ff-arial;
+    color: $dark-gray-2;
+    text-transform: lowercase;
+
+    @media (min-width: $tablet-width) {
+      @include font(14px);
+      @include bg-color($white);
+
+      padding: 0 5px;
+      top: 65px;
+      left: 10px;
+      width: 129px;
+    }
+
+    @media (min-width: $desktop-width) {
+      @include bg-color($gray-1);
+    }
+  }
+
+  &--weight::after {
+    @media (min-width: $tablet-width) {
+      width: 100px;
+      left: 25px;
+    }
+  }
+
+  &--days::after {
+    content: "затрачено времени";
   }
 }
 
 .example__cost {
-  margin-left: auto;
+  @include font(14px);
+
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+  margin-bottom: 50px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    @include font(20px, 27px);
+
+    flex-direction: column;
+    margin-top: 12px;
+    width: 190px;
+    text-align: right;
+  }
 
   @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
     margin-left: 0;
+    margin-top: 56px;
+    width: 327px;
+  }
+}
+
+.example__cost-text {
+  margin: 0;
+}
+
+.example__cost-text:first-child {
+  margin-right: 5px;
+}
+
+.example__wrapper-bottom {
+  padding-top: 260px;
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 0;
+    width: 700px;
   }
 }
 
 .example__img {
-  display: block;
-  margin: 0 auto;
+  display: inline-block;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 
   @media (min-width: $tablet-width) {
-    position: relative;
-    bottom: 20px;
+    top: 54px;
+    width: 690px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -250px;
   }
 }
 
-.example__before-after-bar {
+.example__before-after-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+}
+
+.example__before-after-bar {
+  @media (min-width: $tablet-width) {
+    @include bg-color($gray-1);
+
+    margin-top: -47px;
+    padding-top: 361px;
+    padding-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 128px;
+    padding-top: 338px;
+  }
+}
+
+.example__before,
+.example__after {
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    @include bg-color($gray);
+    @include font(20px, 30px);
 
-    margin-top: -100px;
-    padding-top: 100px;
+    text-decoration: underline $black-30;
+    text-decoration-style: dotted;
+  }
+}
+
+.example__white-bar {
+  @include bg-color($white);
+
+  position: relative;
+  margin-left: 16px;
+  margin-right: 16px;
+  top: 2px;
+  left: 4px;
+  width: 84px;
+  height: 14px;
+  border-radius: 10px;
+
+  @media (min-width: $tablet-width) {
+    @include bg-color($basic-gray);
+
+    position: relative;
+    width: 440px;
+    height: 6px;
+  }
+}
+
+.example__green-bar {
+  @include bg-color($green);
+
+  position: absolute;
+  top: 4px;
+  left: 5px;
+  width: 35px;
+  height: 6px;
+  border-radius: 10px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.example__range-control {
+  @media (min-width: $tablet-width) {
+    @include bg-color($green);
+
+    position: absolute;
+    top: -2px;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      top: -11px;
+      left: -11px;
+      width: 10px;
+      height: 10px;
+      border: 10px solid $white;
+      border-radius: 50%;
+      box-shadow: 0 2px 5px $black-30;
+      cursor: pointer;
+    }
   }
 }

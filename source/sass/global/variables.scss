@@ -1,25 +1,32 @@
 //Colors
 
 $white: rgba(255, 255, 255, 1);
-$white-60: rgba(255, 255, 255, 0.6);
 $white-30: rgba(255, 255, 255, 0.3);
+$white-60: rgba(255, 255, 255, 0.6);
 $black: rgba(0, 0, 0, 1);
-$black-60: rgba(0, 0, 0, 0.6);
 $black-30: rgba(0, 0, 0, 0.3);
+$black-40: rgba(0, 0, 0, 0.4);
+$black-60: rgba(0, 0, 0, 0.6);
 $green: rgba(104, 183, 56, 1);
-$dark-green: rgba(94, 170, 47, 1);
-$gray: rgba(242, 242, 242, 1);
-$dark-gray: rgba(235, 235, 235, 1);
-$input-gray: rgba(205, 205, 205, 1);
-$input-dark-gray: rgba(186, 186, 186, 1);
-$input-dark-gray-30: rgba(186, 186, 186, 0.3);
-$black-gray: rgba(68, 68, 68, 1);
+$green-2: rgba(94, 170, 47, 1);
+$basic-gray: rgba(217, 217, 217, 1);
+$gray-1: rgba(242, 242, 242, 1);
+$gray-2: rgba(235, 235, 235, 1);
+$gray-3: rgba(205, 205, 205, 1);
+$dark-gray-1: rgba(102, 102, 102, 1);
+$dark-gray-2: rgba(68, 68, 68, 1);
+$dark-gray-3: rgba(34, 34, 34, 1);
+$pink-error: rgba(255, 130, 130, 1);
+
 
 //Viewports
 
 $tablet-width: 768px;
 $desktop-width: 1440px;
+$mobile-only: 767px;
+
 
 //Others
 
 $ff-arial: "Arial", "Helvetica", sans-serif;
+$ff-oswald: "Oswald", "Helvetica", sans-serif;
