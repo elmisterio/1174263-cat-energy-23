@@ -28,6 +28,9 @@
 }
 
 .social__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 28px;
 
   @media (min-width: $tablet-width) {
@@ -50,7 +53,7 @@
   justify-content: center;
   position: relative;
   top: 2px;
-  left: 12px;
+  left: 9px;
   width: 100%;
 
   &:hover path {

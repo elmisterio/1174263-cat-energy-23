@@ -1,32 +1,197 @@
-.extra-products__title {
-  @include font(24px, 24px);
+.extra-products {
+  margin-bottom: 34px;
 
-  padding-bottom: 20px;
-  border-bottom: 1px solid $dark-gray-1;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.extra-products__container {
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.extra-products__title {
+  @include font(24px);
+
+  position: relative;
+  display: inline-block;
+  width: auto;
+  margin-top: 5px;
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    @include font(36px);
+
+    padding-left: 36px;
+    margin-top: 48px;
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    margin-top: 56px;
+    margin-bottom: 80px;
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      content: "";
+      top: 22px;
+      right: 100%;
+      width: 400px;
+      height: 2px;
+      background-color: $green;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 112%;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 15px;
+    left: 111%;
+    width: 2000px;
+    height: 2px;
+    background-color: $green;
+
+    @media (min-width: $tablet-width) {
+      top: 22px;
+      left: 110%;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 110%;
+    }
+  }
 }
 
 .extra-products__list {
   @include mp-zero;
 
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    border: 1px solid $gray-3;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+  }
+}
+
+.extra-products__wrapper {
+  @media (min-width: $tablet-width) {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+    display: grid;
+    grid-template-columns: 3fr 245px;
+    align-items: center;
+    gap: 40px;
+  }
+}
+
+.extra-products__item-wrapper-top {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .extra-products__item {
-  padding-bottom: 20px;
-  border-bottom: 1px solid $dark-gray-1;
+  padding-bottom: 18px;
+  border-top: 1px solid $gray-3;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 24px;
+    padding-bottom: 29px;
+    border-top: none;
+    border-bottom: 1px solid $gray-3;
+  }
 
   @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 2fr 2fr 1fr 2fr;
-    gap: 60px;
+    padding-bottom: 16px;
+    padding-top: 15px;
+    border-bottom: none;
+    border-top: 1px solid $gray-3;
+  }
+
+  &:last-child {
+    border-bottom: 1px solid $gray-3;
+
+    @media (min-width: $tablet-width) {
+      border-bottom: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      border-bottom: 1px solid $gray-3;
+    }
+  }
+}
+
+.extra-products__order-btn {
+  @media (min-width: $tablet-width) {
+    @include font(16px);
+
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+
+.extra-products__item-wrapper-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 285px;
   }
 }
 
 .extra-products__product-title {
   @include font(16px, 16px);
 
+  margin-top: 14px;
+  margin-bottom: 12px;
   color: $dark-gray-3;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    @include font(20px);
+
+    margin-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .extra-products__weight,
@@ -35,4 +200,14 @@
 
   font-family: $ff-arial;
   color: $dark-gray-3;
+
+  @media (min-width: $tablet-width) {
+    @include font(16px);
+  }
+}
+
+.extra-products__cost {
+  @media (min-width: $tablet-width) {
+    margin-left: 53px;
+  }
 }
