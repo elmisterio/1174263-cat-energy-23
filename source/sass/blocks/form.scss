@@ -15,29 +15,38 @@
   }
 }
 
-.form fieldset {
+.form__area {
   @include mp-zero;
   border: none;
 }
 
-.form input {
+.form__input-field {
   border: 1px solid $gray-2;
   padding: 12px 20px;
   text-transform: uppercase;
   outline: none;
 }
 
-.form label {
+.form__label-text {
   margin-right: 13px;
 }
 
-.form textarea {
+.form__text {
   box-sizing: border-box;
-  padding: 10px 15px;
+  padding: 10px 0 10px 15px;
   width: 100%;
   text-transform: uppercase;
   border: 1px solid $gray-2;
   outline: none;
+  margin-top: 14px;
+  min-height: 150px;
+  resize: vertical;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 9px;
+    margin-bottom: 37px;
+    min-height: 175px;
+  }
 }
 
 .form .form__grid-wrapper-top-container {
@@ -146,24 +155,24 @@
   }
 }
 
-.form .form__name-age {
+.form__area--name-age {
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.form__name-age input:hover,
-.form__contacts input:hover,
-.form textarea:hover {
+.form__area--name-age .form__input-field:hover,
+.form__area--contacts .form__input-field:hover,
+.form__text:hover {
   border: 1px solid $gray-3;
 }
 
-.form__name-age input:focus,
-.form__contacts input:focus,
-.form textarea:focus {
+.form__area--name-age .form__input-field:focus,
+.form__area--contacts .form__input-field:focus,
+.form__text:focus {
   border: 1px solid $dark-gray-2;
 }
 
-.form .form__program-category {
+.form__area--program-category {
   padding-top: 28px;
 
   @media (min-width: $tablet-width) {
@@ -179,7 +188,7 @@
   }
 }
 
-.form__program-category label {
+.form__area--program-category .form__label-text {
   display: inline-block;
   position: relative;
   padding-left: 45px;
@@ -209,7 +218,7 @@
   }
 }
 
-.form__program-category input:checked + label::after {
+.form__area--program-category .form__input-field:checked + .form__label-text::after {
   position: absolute;
   content: "";
   top: 2px;
@@ -227,29 +236,29 @@
   }
 }
 
-.form__program-category input:disabled + label {
+.form__area--program-category .form__input-field:disabled + .form__label-text {
   opacity: 0.4;
 }
 
-.form__program-category input:disabled + label:hover::before {
+.form__area--program-category .form__input-field:disabled + .form__label-text:hover::before {
   border: 1px solid $gray-3;
 }
 
-.form__program-category input:focus + label::before {
+.form__area--program-category .form__input-field:focus + .form__label-text::before {
   border: 1px solid $dark-gray-2;
 }
 
-.form__program-category .form__input-wrapper {
+.form__area--program-category .form__input-wrapper {
   margin-bottom: 24px;
 }
 
-.form .form__contacts {
+.form__area--contacts {
   @media (min-width: $tablet-width) {
     margin-bottom: 35px;
   }
 }
 
-.form__contacts .form__legend-title {
+.form__area--contacts .form__legend-title {
   &::before {
     @media (min-width: $tablet-width) {
       right: 108%;
@@ -269,7 +278,7 @@
   }
 }
 
-.form__contacts .form__grid-wrapper {
+.form__area--contacts .form__grid-wrapper {
   padding-top: 10px;
   padding-bottom: 11px;
 
@@ -280,7 +289,7 @@
   }
 }
 
-.form__contacts input {
+.form__area--contacts .form__input-field {
   position: relative;
   box-sizing: border-box;
   padding-right: 40px;
@@ -298,28 +307,15 @@
   }
 }
 
-.form__contacts input:focus + .form__input-icon path {
+.form__area--contacts .form__input-field:focus + .form__input-icon path {
   fill: $green;
 }
 
-.form .form__comment {
+.form__area--comment {
   margin-bottom: 21px;
 }
 
-.form .form__text {
-  padding-right: 0;
-  margin-top: 14px;
-  min-height: 150px;
-  resize: vertical;
-
-  @media (min-width: $tablet-width) {
-    margin-top: 9px;
-    margin-bottom: 37px;
-    min-height: 175px;
-  }
-}
-
-.form__extra .form__grid-wrapper {
+.form__area--extra .form__grid-wrapper {
   margin-top: 15px;
   margin-bottom: 39px;
 
@@ -340,11 +336,11 @@
   }
 }
 
-.form__extra .form__input-wrapper:not(:last-child) {
+.form__area--extra .form__input-wrapper:not(:last-child) {
   margin-bottom: 25px;
 }
 
-.form__extra label {
+.form__area--extra .form__label-text {
   display: inline-block;
   position: relative;
   padding-left: 46px;
@@ -373,7 +369,7 @@
   }
 }
 
-.form__extra input:checked + label::after {
+.form__area--extra .form__input-field:checked + .form__label-text::after {
   position: absolute;
   content: "";
   top: -6px;
@@ -393,15 +389,15 @@
   }
 }
 
-.form__extra input:disabled + label {
+.form__area--extra .form__input-field:disabled + .form__label-text {
   opacity: 0.4;
 }
 
-.form__extra input:disabled + label:hover::before {
+.form__area--extra .form__input-field:disabled + .form__label-text:hover::before {
   border: 1px solid $gray-3;
 }
 
-.form__extra input:focus + label::before {
+.form__area--extra .form__input-field:focus + .form__label-text::before {
   border: 1px solid $dark-gray-2;
 }
 

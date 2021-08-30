@@ -9,3 +9,14 @@
     margin-top: 20px;
   }
 }
+
+.description__dl-item-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 7px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid $gray-3;
+  }
+}

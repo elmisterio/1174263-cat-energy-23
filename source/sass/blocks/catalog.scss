@@ -125,13 +125,13 @@
 .catalog__product-img {
   align-self: center;
   justify-self: center;
+  width: auto;
 
   @media (min-width: $tablet-width) {
     position: absolute;
     top: -50px;
     left: 50%;
     transform: translateX(-50%);
-    width: 140px;
   }
 }
 
@@ -150,17 +150,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-}
-
-.catalog__dl-item-wrapper {
-  display: flex;
-  justify-content: space-between;
-
-  @media (min-width: $tablet-width) {
-    padding-bottom: 7px;
-    margin-bottom: 8px;
-    border-bottom: 1px solid $gray-3;
   }
 }
 
