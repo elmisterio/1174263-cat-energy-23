@@ -1,6 +1,6 @@
 .green-button {
   @include bg-color($green);
-  @include font(14px, 20px);
+  @include font(16px, 20px);
 
   display: inline-block;
   width: 100%;
@@ -8,8 +8,14 @@
   text-align: center;
   text-transform: uppercase;
   color: $white;
-  outline: none;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    @include font(20px);
+
+    padding: 18px 27px;
+    width: auto;
+  }
 
   &:hover {
     @include bg-color($green-2);

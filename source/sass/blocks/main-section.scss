@@ -95,12 +95,3 @@
     width: 550px;
   }
 }
-
-.main-section__button {
-  @media (min-width: $tablet-width) {
-    @include font(20px);
-
-    padding: 18px 27px;
-    width: auto;
-  }
-}

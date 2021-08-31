@@ -12,9 +12,7 @@
   padding-bottom: 26px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 70px;
-    padding-right: 70px;
-    padding-bottom: 58px;
+    padding: 65px 70px 58px 70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -22,11 +20,21 @@
     top: 96px;
     left: 18%;
     width: 428px;
-    padding: 62px 60px 62px 80px;
+    padding-left: 80px;
   }
 
   &--bg-white {
     @include bg-color($white);
+  }
+
+  &--bg-gray {
+    @media (max-width: $desktop-width) {
+      @include bg-color($gray-1);
+    }
+
+    @media (min-width: $desktop-width) {
+      @include bg-color($white);
+    }
   }
 }
 

@@ -1,10 +1,39 @@
-.main-form .main-subtitle {
-  margin: 0;
-  padding-top: 37px;
-  padding-bottom: 37px;
+.main-form {
+  padding-top: 28px;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 50px;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 68px;
+    margin-bottom: 40px;
+  }
 }
 
 .main-form .container {
-  padding-left: 20px;
-  padding-right: 20px;
+  @media (min-width: $tablet-width) {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+
+.main-form .main-subtitle {
+  margin: 0;
+  padding-top: 37px;
+  padding-bottom: 28px;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 54px;
+    padding-bottom: 57px;
+    line-height: 30px;
+  }
 }
