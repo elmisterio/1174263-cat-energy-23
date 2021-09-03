@@ -67,6 +67,7 @@
     @include bg-color($gray-1);
 
     padding-top: 71px;
+    margin-bottom: -258px;
   }
 }
 
@@ -218,33 +219,94 @@
 }
 
 .example__wrapper-bottom {
-  padding-top: 260px;
   position: relative;
 
   @media (min-width: $desktop-width) {
+    position: relative;
+    top: -258px;
+    left: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding-top: 0;
-    width: 700px;
+    width: 572px;
+  }
+}
+
+.example__wrapper-img {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+    max-width: 700px;
+    min-height: 570px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    left: -90px;
+    top: -45px;
+  }
+}
+
+.example__wrapper-img-left {
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    overflow: hidden;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 59%;
+  }
+}
+
+.example__wrapper-img-right {
+  display: none;
+
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    width: 50%;
+    overflow: hidden;
   }
 }
 
 .example__img {
   display: inline-block;
-  position: absolute;
+  position: relative;
   z-index: 10;
-  top: 0;
+  top: -6px;
   left: 50%;
   transform: translateX(-50%);
 
   @media (min-width: $tablet-width) {
-    top: 54px;
-    width: 690px;
+    min-width: 600px;
   }
 
-  @media (min-width: $desktop-width) {
-    top: -250px;
+  // @media (min-width: $desktop-width) {
+  //   top: -265px;
+  //   left: 47%;
+  //   min-width: 700px;
+  // }
+
+  &--left {
+    @media (min-width: $tablet-width) {
+      top: 45px;
+      left: 350px;
+      min-width: 670px;
+    }
+  }
+
+  &--right {
+    @media (min-width: $tablet-width) {
+      top: 41px;
+      left: 26px;
+      min-width: 544px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 0;
+    }
   }
 }
 
@@ -252,19 +314,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .example__before-after-bar {
+  padding-top: 25px;
+
   @media (min-width: $tablet-width) {
     @include bg-color($gray-1);
 
-    margin-top: -47px;
+    margin-top: -358px;
     padding-top: 361px;
     padding-bottom: 70px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 128px;
+    padding-left: 0;
     padding-top: 338px;
   }
 }

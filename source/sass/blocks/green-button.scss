@@ -9,6 +9,7 @@
   text-transform: uppercase;
   color: $white;
   border: none;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     @include font(20px);
@@ -29,5 +30,9 @@
     @include bg-color($gray-1);
 
     color: $dark-gray-3;
+
+    &:hover {
+      color: $white;
+    }
   }
 }
