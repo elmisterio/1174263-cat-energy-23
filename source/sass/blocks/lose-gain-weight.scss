@@ -45,13 +45,13 @@
   }
 
   &--lose::before {
-    background-image: url("../img/icon-lose-weight.svg");
+    background-image: url("../img/icons/icon-lose-weight.svg");
   }
 
   &--gain::before {
     top: 171px;
     right: 124px;
-    background-image: url("../img/icon-gain-weight.svg");
+    background-image: url("../img/icons/icon-gain-weight.svg");
   }
 }
 
@@ -111,13 +111,13 @@
   }
 
   &--lose::before {
-    background-image: url("../img/icon-lose-weight.svg");
+    background-image: url("../img/icons/icon-lose-weight.svg");
   }
 
   &--gain::before {
     top: -13px;
     left: -7px;
-    background-image: url("../img/icon-gain-weight.svg");
+    background-image: url("../img/icons/icon-gain-weight.svg");
 
     @media (min-width: $desktop-width) {
       top: -5px;
@@ -176,7 +176,7 @@
     left: 74%;
     width: 35px;
     height: 35px;
-    background-image: url("../img/icon-arrow-short.svg");
+    background-image: url("../img/icons/icon-arrow-short.svg");
     background-repeat: no-repeat;
     transition: all 0.1s ease-out;
 
@@ -187,7 +187,7 @@
   }
 
   &:hover::after {
-    background-image: url("../img/icon-arrow-long.svg");
+    background-image: url("../img/icons/icon-arrow-long.svg");
     transition: all 0.1s ease-out;
   }
 }

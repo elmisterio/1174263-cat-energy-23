@@ -20,6 +20,10 @@
     justify-content: space-between;
     padding-top: 50px;
   }
+
+  &--no-border {
+    border: none;
+  }
 }
 
 .header__wrapper .container {
@@ -50,6 +54,17 @@
   @media (min-width: $tablet-width) {
     padding-left: 0;
     padding-right: 0;
+  }
+}
+
+.header__logo {
+  @media (min-width: $tablet-width) {
+    width: 172px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    margin-left: -55px;
   }
 }
 

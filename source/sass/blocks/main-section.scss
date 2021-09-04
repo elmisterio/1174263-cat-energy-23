@@ -46,6 +46,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 103px;
+    margin-left: -2px;
   }
 }
 
@@ -84,14 +85,14 @@
 
   @media (min-width: $tablet-width) {
     bottom: 0;
-    left: 52%;
+    left: 50%;
     z-index: -10;
-    width: 660px;
+    width: 700px;
   }
 
   @media (min-width: $desktop-width) {
     bottom: 80px;
-    left: 56%;
+    left: 57%;
     width: 550px;
   }
 }

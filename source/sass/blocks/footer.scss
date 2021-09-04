@@ -15,10 +15,6 @@
     justify-content: space-between;
     align-items: center;
   }
-
-  @media (min-width: $desktop-width) {
-    margin-right: -33px;
-  }
 }
 
 .footer__social-list {
