@@ -20,9 +20,14 @@
   padding-left: 0;
   padding-right: 0;
 
+  @media (min-width: 1200px) {
+    max-width: 100%;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    max-width: 1220px;
   }
 }
 
@@ -282,12 +287,6 @@
   @media (min-width: $tablet-width) {
     min-width: 600px;
   }
-
-  // @media (min-width: $desktop-width) {
-  //   top: -265px;
-  //   left: 47%;
-  //   min-width: 700px;
-  // }
 
   &--left {
     @media (min-width: $tablet-width) {
