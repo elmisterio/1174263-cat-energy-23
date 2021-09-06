@@ -54,9 +54,9 @@
   position: relative;
   top: 2px;
   left: 9px;
-  width: 100%;
 
-  &:hover path {
+
+  &:hover .social__img {
     fill: $green;
   }
 
@@ -65,7 +65,15 @@
   }
 }
 
+.social__img {
+  fill: $dark-gray-1;
+}
+
+.social__link--inst {
+  top: 3px;
+}
+
 .social__link--fb {
-  top: -2px;
-  left: -3px;
+  top: -3px;
+  left: -4px;
 }

@@ -15,10 +15,14 @@
     padding: 65px 70px 58px 70px;
   }
 
+  @media (min-width: 1360px) {
+    max-width: 100%;
+  }
+
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 96px;
-    left: 14%;
+    left: 110px;
     width: 428px;
     padding-left: 80px;
   }
@@ -35,6 +39,16 @@
     @media (min-width: $desktop-width) {
       @include bg-color($white);
     }
+  }
+}
+
+.map__text-container {
+  @media (min-width: $desktop-width) {
+    position: relative;
+    max-width: 1220px;
+    padding-left: 110px;
+    padding-right: 110px;
+    margin: 0 auto;
   }
 }
 

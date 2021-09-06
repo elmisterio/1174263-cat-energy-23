@@ -23,13 +23,14 @@
   &--academy {
     justify-content: space-between;
     width: 100%;
+    fill: $dark-gray-1;
 
     @media (min-width: $tablet-width) {
-      max-width: 160px;
+      max-width: 164px;
     }
   }
 
-  &--academy:hover .logo__img-svg path {
+  &--academy:hover .logo__img-svg {
     fill: $green;
   }
 }
