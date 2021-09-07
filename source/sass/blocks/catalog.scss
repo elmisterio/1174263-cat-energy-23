@@ -56,9 +56,7 @@
 
     box-sizing: border-box;
     position: relative;
-    padding-top: 161px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 161px 40px 38px;
     margin-bottom: 21px;
     min-height: 430px;
     min-width: 324px;
@@ -138,13 +136,13 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    bottom: 300px;
+    bottom: 70%;
     left: 50%;
     transform: translateX(-50%);
   }
 
   @media (min-width: $desktop-width) {
-    bottom: 311px;
+    bottom: 72%;
   }
 }
 
@@ -159,6 +157,7 @@
 .catalog__order-btn {
   @include font(16px);
 
+  box-sizing: border-box;
   padding-top: 13px;
   padding-bottom: 13px;
   width: 100%;

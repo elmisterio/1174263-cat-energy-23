@@ -13,11 +13,11 @@
 }
 
 .main-section__wrapper-top {
-  height: 302px;
+  min-height: 302px;
   margin-bottom: 138px;
 
   @media (min-width: $tablet-width) {
-    height: 220px;
+    min-height: 220px;
     margin-bottom: 0;
     background: none;
   }
@@ -55,8 +55,14 @@
   color: $white;
 
   @media (min-width: $tablet-width) {
+    max-width: 500px;
+    margin-bottom: 48px;
     text-align: left;
     color: $black;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 51px;
   }
 }
 
@@ -64,13 +70,11 @@
   padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 58px;
     padding-bottom: 400px;
     margin-bottom: 10px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 114px;
     padding-bottom: 40px;
     margin-bottom: 10px;
   }

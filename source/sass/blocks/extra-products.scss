@@ -155,6 +155,7 @@
   @media (min-width: $tablet-width) {
     @include font(16px);
 
+    box-sizing: border-box;
     width: 100%;
     padding-top: 12px;
     padding-bottom: 12px;

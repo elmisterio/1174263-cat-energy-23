@@ -25,6 +25,11 @@
   padding: 12px 20px;
   text-transform: uppercase;
   outline: none;
+
+  &--error {
+    border: 1px solid $pink-error;
+    animation: shake 0.5s;
+  }
 }
 
 .form__label-text {
@@ -418,6 +423,10 @@
 .form__submit {
   @media (min-width: $tablet-width) {
     min-width: 285px;
+  }
+
+  &--error {
+    animation: shake 0.5s;
   }
 }
 
