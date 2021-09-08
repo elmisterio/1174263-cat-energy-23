@@ -28,7 +28,7 @@
 
   &--error {
     border: 1px solid $pink-error;
-    animation: shake 0.5s;
+    @include animation(shake, 0.5s);
   }
 }
 
@@ -426,7 +426,7 @@
   }
 
   &--error {
-    animation: shake 0.5s;
+    @include animation(shake, 0.5s);
   }
 }
 

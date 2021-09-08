@@ -2,10 +2,10 @@ let burgerButton = document.querySelector('.navigation__burger');
 let burgerLines = document.querySelector('.navigation__burger-line');
 let navList = document.querySelector('.navigation__list');
 let form = document.querySelector('.form');
-let formName = document.querySelector('.form__input-field--name');
-let formWeight = document.querySelector('.form__input-field--weight');
-let formEmail = document.querySelector('.form__input-field--email');
-let formPhone = document.querySelector('.form__input-field--phone');
+let formName = document.querySelector('#input-name');
+let formWeight = document.querySelector('#input-weight');
+let formEmail = document.querySelector('#input-email');
+let formPhone = document.querySelector('#input-phone');
 let formSubmit = document.querySelector('.form__submit');
 
 // Burger menu

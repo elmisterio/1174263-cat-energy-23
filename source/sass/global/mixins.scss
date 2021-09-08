@@ -17,3 +17,7 @@
   line-height: $line-height;
   font-weight: $font-weight;
 }
+
+@mixin animation ($animation-name, $animation-time, $animation-func: ease-out) {
+  animation: $animation-name $animation-time $animation-func;
+}
