@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи - Подбор программы</title>
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple_180x180.png">
@@ -56,11 +58,11 @@
               <fieldset class="form__area form__area--name-age">
                 <div class="form__input-wrapper">
                   <label class="form__label-text" for="input-name">Имя:*</label>
-                  <input class="form__input-field" id="input-name" name="name-item" type="text" placeholder="Барсик">
+                  <input class="form__input-field form__input-field--name" id="input-name" name="name-item" type="text" placeholder="Барсик">
                 </div>
                 <div class="form__input-wrapper">
                   <label class="form__label-text" for="input-weight">Вес&nbsp;(кг):*</label>
-                  <input class="form__input-field" id="input-weight" name="weight-item" type="text" placeholder="7">
+                  <input class="form__input-field form__input-field--weight" id="input-weight" name="weight-item" type="text" placeholder="7">
                 </div>
                 <div class="form__input-wrapper">
                   <label class="form__label-text" for="input-age">Возраст&nbsp;(лет):</label>
@@ -97,15 +99,15 @@
             <div class="form__grid-wrapper">
               <div class="form__input-wrapper">
                 <label class="form__label-text" for="input-email">E-mail:*</label>
-                <input class="form__input-field" id="input-email" name="email-item" type="email" placeholder="kuklachev@gmail.com">
-                <svg class="form__input-icon form__input-icon--email" width="19" height="17">
+                <input class="form__input-field form__input-field--email" id="input-email" name="email-item" type="email" placeholder="kuklachev@gmail.com">
+                <svg class="form__input-icon form__input-icon--email" width="19" height="22">
                   <use xlink:href="img/sprite.svg#icon-email"></use>
                 </svg>
               </div>
               <div class="form__input-wrapper">
                 <label class="form__label-text" for="input-phone">Телефон:*</label>
-                <input class="form__input-field" id="input-phone" name="phone-item" type="email" placeholder="8 (960) 900-60-90">
-                <svg class="form__input-icon form__input-icon--phone" width="18" height="27">
+                <input class="form__input-field form__input-field--phone" id="input-phone" name="phone-item" type="tel" placeholder="8 (960) 900-60-90">
+                <svg class="form__input-icon form__input-icon--phone" width="18" height="29">
                   <use xlink:href="img/sprite.svg#icon-phone"></use>
                 </svg>
               </div>
@@ -216,6 +218,6 @@
     </div>
   </footer>
 
-  <script src="./js/main.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
 </html>

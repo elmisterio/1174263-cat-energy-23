@@ -21,7 +21,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 517px;
+    max-width: 517px;
   }
 
   &::before {
@@ -81,12 +81,14 @@
     @include font(36px);
 
     padding-left: 33px;
+    max-width: 380px;
   }
 
   @media (min-width: $desktop-width) {
     @include font(36px);
 
     padding-left: 194px;
+    max-width: 330px;
   }
 
   &::before {

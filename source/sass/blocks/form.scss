@@ -25,6 +25,12 @@
   padding: 12px 20px;
   text-transform: uppercase;
   outline: none;
+
+  &--error {
+    @include animation(shake, 0.5s);
+
+    border: 1px solid $pink-error;
+  }
 }
 
 .form__label-text {
@@ -297,7 +303,7 @@
 
 .form__input-icon {
   position: absolute;
-  top: 15px;
+  top: 13px;
   right: 15px;
 
   &--phone {
@@ -418,6 +424,10 @@
 .form__submit {
   @media (min-width: $tablet-width) {
     min-width: 285px;
+  }
+
+  &--error {
+    @include animation(shake, 0.5s);
   }
 }
 
