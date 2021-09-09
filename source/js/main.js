@@ -62,3 +62,22 @@ form.addEventListener('submit', function (evt) {
     formSubmit.classList.add('form__submit--error');
     };
 });
+
+// Map marker
+function initMap() {
+  let map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 14,
+    center: { lat: 59.93992031509298, lng: 30.322092532317637 },
+  });
+  const image =
+    "https://i.ibb.co/BZtvk1v/logo-map-pin.png";
+  const beachMarker = new google.maps.Marker({
+    position: { lat: 59.93884920987664, lng: 30.323017801461948 },
+    map,
+    icon: image,
+  });
+
+  if (window.innerWidth >= 1440) {
+    map.zoom = 15;
+  }
+}
