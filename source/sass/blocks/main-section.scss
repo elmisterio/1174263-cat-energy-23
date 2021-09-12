@@ -26,7 +26,10 @@
 .main-section__wrapper-top,
 .main-section__wrapper-bottom {
   @media (min-width: $desktop-width) {
-    padding-left: 180px;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
