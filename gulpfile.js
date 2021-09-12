@@ -2,7 +2,7 @@ const gulp = require("gulp");
 const del = require("del");
 const plumber = require("gulp-plumber");
 const sourcemap = require("gulp-sourcemaps");
-const sass = require('gulp-sass')(require('sass'));
+const sass = require("gulp-sass")(require("sass"));
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const csso = require("postcss-csso");
@@ -28,6 +28,7 @@ const copy = (done) => {
   gulp.src([
     "source/fonts/*.{woff2,woff}",
     "source/*.ico",
+    "source/manifest.webmanifest",
   ], {
     base: "source"
   })
@@ -96,9 +97,13 @@ exports.html = html;
 // Scripts
 
 const scripts = () => {
-  return gulp.src("source/js/main.js")
+  return gulp.src("source/js/*.js")
     .pipe(terser())
-    .pipe(rename("main.min.js"))
+    .pipe(rename(path => ({
+      dirname: path.dirname,
+      basename: path.basename + ".min",
+      extname: ".js"
+  })))
     .pipe(gulp.dest("build/js"))
     .pipe(sync.stream());
 }
@@ -136,7 +141,7 @@ exports.createWebp = createWebp;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'build'
+      baseDir: "build"
     },
     cors: true,
     notify: false,

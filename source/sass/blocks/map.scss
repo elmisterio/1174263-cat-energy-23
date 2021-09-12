@@ -94,17 +94,37 @@
   }
 }
 
-.map__img {
+.map__map {
   width: 100%;
   height: 362px;
-  object-fit: cover;
+  background-image: url("../img/bg/map-bg-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg/map-bg-mobile@2x.png");
+  }
 
   @media (min-width: $tablet-width) {
     height: 400px;
+    background-image: url("../img/bg/map-bg-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg/map-bg-tablet@2x.png");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/bg/map-bg-desktop.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg/map-bg-desktop@2x.png");
+    }
   }
 }
 
-#map {
+.map__img {
   width: 100%;
   height: 362px;
   object-fit: cover;
