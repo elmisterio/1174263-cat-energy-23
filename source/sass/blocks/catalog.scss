@@ -55,7 +55,6 @@
     @include bg-color($gray-1);
 
     box-sizing: border-box;
-    position: relative;
     padding: 161px 40px 38px;
     margin-bottom: 21px;
     min-height: 430px;
@@ -87,6 +86,11 @@
       padding-right: 35px;
     }
   }
+}
+
+.catalog__product-item-link {
+
+  position: relative;
 }
 
 .catalog__product-item-container {
@@ -136,13 +140,13 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    bottom: 70%;
+    bottom: 50px;
     left: 50%;
     transform: translateX(-50%);
   }
 
   @media (min-width: $desktop-width) {
-    bottom: 72%;
+    bottom: 38px;
   }
 }
 

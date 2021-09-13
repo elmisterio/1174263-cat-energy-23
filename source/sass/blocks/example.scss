@@ -399,28 +399,28 @@
 
 .example__range-control {
   @media (min-width: $tablet-width) {
-    @include bg-color($green);
-
     position: absolute;
-    top: -2px;
-    left: 50%;
-    width: 8px;
-    height: 8px;
+    top: -11px;
+    left: 47%;
+    width: 10px;
+    height: 10px;
+    border: 10px solid $white;
     border-radius: 50%;
+    box-shadow: 0 2px 5px $black-30;
     cursor: pointer;
   }
 
   &::after {
     @media (min-width: $tablet-width) {
+      @include bg-color($green);
+
       content: "";
       position: absolute;
-      top: -11px;
-      left: -11px;
+      top: 0;
+      left: 0;
       width: 10px;
       height: 10px;
-      border: 10px solid $white;
       border-radius: 50%;
-      box-shadow: 0 2px 5px $black-30;
       cursor: pointer;
     }
   }
