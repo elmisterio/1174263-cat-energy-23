@@ -1,7 +1,9 @@
 .logo {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
+  height: 65px;
+  width: 100%;
 
   &:hover {
     opacity: 0.8;
@@ -12,7 +14,8 @@
   }
 
   &--footer {
-    margin-top: 40px;
+    margin-top: 19px;
+    justify-content: center;
 
     @media (min-width: $tablet-width) {
       margin-top: 0;
@@ -32,5 +35,27 @@
 
   &--academy:hover .logo__img-svg {
     fill: $green;
+  }
+}
+
+.logo__img--icon {
+  @media (min-width: $tablet-width) {
+    width: 61px;
+    margin-right: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 69px;
+    margin-right: 0;
+  }
+}
+
+.logo__img--text {
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: $desktop-width) {
+    width: 122px;
+    margin-right: 10px;
   }
 }
