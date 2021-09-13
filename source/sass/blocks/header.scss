@@ -28,16 +28,16 @@
 
 .header__wrapper .container {
   @media (max-width: $mobile-only) {
-    padding-left: 0;
-    padding-right: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding-right: 52px;
   }
 }
 
 .header__wrapper-top {
   @include bg-color($white);
 
-  display: flex;
-  align-items: center;
   min-height: 65px;
 
   @media (min-width: $tablet-width) {
@@ -63,27 +63,42 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
-    margin-left: -55px;
+    width: 215px;
   }
 }
 
 .header__bg {
   position: absolute;
   z-index: -10;
+  top: 65px;
+  left: 0;
   height: 302px;
   width: 100%;
-  object-fit: cover;
+  background-image: url("../img/bg/cat-green-mobile.jpg");
+  background-position: 64% top;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg/cat-green-mobile@2x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
     display: none;
   }
 
   @media (min-width: $desktop-width) {
-    display: block;
+    display: inline-block;
+    z-index: -20;
     width: 50%;
     height: 694px;
     top: 0;
-    right: 0;
+    left: 50%;
+    background-image: url("../img/bg/cat-green-desktop.jpg");
+    background-position: 0 0;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg/cat-green-desktop@2x.jpg");
   }
 }

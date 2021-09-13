@@ -3,6 +3,7 @@
     height: 850px;
     padding-left: 90px;
     margin-bottom: 9px;
+    background-image: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -86,7 +87,7 @@
 .main-section__img {
   position: absolute;
   bottom: 70px;
-  width: 300px;
+  width: 275px;
   left: 50%;
   transform: translateX(-50%);
 
