@@ -8,6 +8,7 @@
 - Адаптив под планшетную и мобильную версии
 - Кроссбраузерность
 - Бургер меню в мобильной версии
+- SVG-спрайты
 
 
 <img width="1200" alt="" src="https://github.com/stsmolyanko/Cat-Energy-marketplace-source/blob/master/catenergy%20page%20desktop.jpg?raw=true">
