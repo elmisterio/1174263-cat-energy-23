@@ -1,7 +1,7 @@
 # Интернет-магазин «Кэт энерджи»
 Учебный проект на курсе Frontend-разработки.<br> 
 *Функциональное питание для котов. Занялся собой? - Займись котом!* <br>
->Страничка проекта на GitHub Pages https://stsmolyanko.github.io/Cat-Energy-marketplace-build/
+>Страничка проекта на GitHub Pages https://stsmolyanko.github.io/Cat-Energy-marketplace/
 
 
 - HTML
